@@ -1,0 +1,6 @@
+@import "./mixin.scss";
+
+.container-rescue{
+    @include container;
+    @include container-outlets;
+}

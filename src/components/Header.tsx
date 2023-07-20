@@ -1,33 +1,34 @@
 import "../styles/header.scss";
+import { Link } from "react-router-dom";
 import { HeaderMenuOptions } from "../utils/strings";
 
 export default function Header() {
   return (
     <header>
-      <div className="container">
+      <div className="container-header">
         <div>
-          <a href="#">
+          <Link to="/">
             <h2>{HeaderMenuOptions.Logo}</h2>
-          </a>
+          </Link>
         </div>
         <nav>
           <ul>
             <li>
-              <a href="#">{HeaderMenuOptions.Home}</a>
+              <Link to="/">{HeaderMenuOptions.Home}</Link>
             </li>
             <li>
-              <a href="#">{HeaderMenuOptions.Rescue}</a>
+              <Link to="/">{HeaderMenuOptions.Rescue}</Link>
             </li>
             <li>
-              <a href="#">{HeaderMenuOptions.About}</a>
+              <Link to="/about">{HeaderMenuOptions.About}</Link>
             </li>
             <li>
-              <a href="#">{HeaderMenuOptions.Contacts}</a>
+              <Link to="/">{HeaderMenuOptions.Contacts}</Link>
             </li>
           </ul>
         </nav>
         <div className="announcement-button">
-          <a href="#">{HeaderMenuOptions.Announcement}</a>
+          <Link to="/announcement">{HeaderMenuOptions.Announcement}</Link>
         </div>
       </div>
     </header>

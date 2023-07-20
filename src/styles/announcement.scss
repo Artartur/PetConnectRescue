@@ -1,0 +1,6 @@
+@import "./mixin.scss";
+
+.container-announcement{
+    @include container;
+    @include container-outlets;
+}

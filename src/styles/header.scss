@@ -1,9 +1,10 @@
+@import "./mixin.scss";
+
 header {
   background-color: #c17942;
   padding: 1.5rem;
-  .container {
-    align-items: center;
-    display: flex;
+  .container-header {
+    @include container;
     justify-content: space-around;
     text-decoration: none;
 
