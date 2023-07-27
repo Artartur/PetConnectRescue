@@ -1,0 +1,23 @@
+@import "./mixins.scss";
+
+.container-about {
+  @include container;
+  flex-direction: column;
+  margin: 2rem 0;
+
+  div {
+    max-width: 850px;
+    text-align: justify;
+    white-space: pre-line;
+
+    span {
+      font-size: 20px;
+      font-weight: 520;
+    }
+  }
+
+  h2 {
+    font-size: 26px;
+    margin-bottom: 1.5rem;
+  }
+}
