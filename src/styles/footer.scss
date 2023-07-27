@@ -1,15 +1,19 @@
 @import "./mixins.scss";
 
 footer {
+  @include container;
   .container-footer {
     background-color: #c17942;
+    bottom: 0;
     padding: 1.5rem;
+    position: absolute;
+    width: 100%;
 
     div {
-        @include container;
-        margin: 2% 73% 0 0;
-        font-size: 14px;
-      }
+      @include container;
+      margin: 2% 73% 0 0;
+      font-size: 14px;
+    }
 
     ul {
       @include container;
@@ -18,10 +22,10 @@ footer {
       justify-content: space-around;
       font-size: 18px;
 
-        li:hover{
-            color: rgb(188, 188, 188);
-            cursor: pointer;
-        }
+      li:hover {
+        color: rgb(188, 188, 188);
+        cursor: pointer;
+      }
     }
   }
 }
