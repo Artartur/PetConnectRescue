@@ -1,0 +1,10 @@
+@import "./mixins.scss";
+
+.container-error {
+  @include container;
+  height: 100vh;
+
+  h1 {
+    font-size: 40px;
+  }
+}
