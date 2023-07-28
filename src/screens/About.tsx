@@ -5,7 +5,7 @@ import "../styles/about.scss";
 export default function About() {
   return (
     <div className="container-about">
-      <h2>Sobre nos</h2>
+      <h2>Sobre nós</h2>
       <div>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
